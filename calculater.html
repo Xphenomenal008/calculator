@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital-calccultor</title>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    body {
+        background-color: blueviolet;
+    }
+    .class input{
+height: 70px;
+width: 80px;
+font-size: 25px;
+font-weight: 300;
+color: aliceblue;
+background-color: black;
+margin-left: 10px;
+margin-top: 20px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+form{
+    border-radius: 10PX;
+font-weight: 200;
+    width: 40%;
+    height: 100vh;
+     border: 2px solid;
+       margin: 120px;
+       padding: 60px;
+       background-color: rgba(1, 0, 0,1);
+       box-sizing:border-box;
+        
+}
+ .display input{
+    height: 100px;
+    width: 80%;
+    font-size: 50px;
+    padding: 10px;
+    border: none;
+    color: rgb(207, 199, 199);
+    background-color: black;
+ }
+  
+ 
+</style>
+   
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <form>
+
+    <div class="cointaner">
+        <div class="display">
+             <input type="text"  name="display">
+        </div
+
+      <div class="inputs">  
+        <div class="class">
+
+<div>
+    <input type="button" value="+" onclick="display.value += '+'">
+    <input type="button" value="-" onclick="display.value+='-'">
+    <input type="button" value="/" onclick="display.value+='/'">
+    <input type="button" value="*" onclick="display.value+='*'">
+</div>
+<div>
+    <input type="button" value="1" onclick="display.value+='1'">
+    <input type="button" value="2" onclick="display.value+='2'">
+    <input type="button" value="3" onclick="display.value+='3'">
+    <input type="button" value="4" onclick="display.value+='4'">
+</div>
+
+<div>
+    <input type="button" value="5" onclick="display.value+='5'">
+    <input type="button" value="6" onclick="display.value+='6'">
+    <input type="button" value="7" onclick="display.value+='7'">
+    <input type="button" value="8" onclick="display.value+='8'">
+</div>
+<div>
+    <input type="button" value="9" onclick="display.value+='9'">
+    <input type="button" value="0" onclick="display.value+='0'">
+    <input type="button" value="00" onclick="display.value+='00'">
+    <input type="button" value="000" onclick="display.value=''">
+</div>
+ <div >
+    <input type="button" value="=" onclick="display.value= eval(display.value) ">
+    <input type="button" value="DE" onclick="display.value=display.value.toString().slice(0,-1) ">
+    <input type="button" value="CLEAR" onclick="display.value=''">
+ </div>
+</div>
+  
+</div>
+        
+    </div>
+</form>
+</body>
+</html>
